@@ -8,7 +8,7 @@ https://api.telegram.org/bot1628395980:AAHZJERtoZW3ieydpRkuffnwPyyM2BgcKjg/getUp
 
 import os
 
-import redis
+#import redis
 import telebot
 from core import *
 from strings import *
