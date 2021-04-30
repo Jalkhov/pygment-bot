@@ -1,6 +1,7 @@
 # List of required packages (Dependencies)
 pyTelegramBotAPI
 pygments
+Pillow
 
 # If you need to specify a version
 #requests==2.16.5
