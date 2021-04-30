@@ -13,11 +13,11 @@ DiAlgoBonito()
 
 Dando como resultado lo siguiente :neutral_face::
 
-![ugly_message](capturas\ugly_message.png)
+![ugly_message](capturas/ugly_message.png)
 
 Pero la verdad esto me sigue pareciendo feo y sin gracia :sweat_smile: Yo puedo ayudarte a convertir eso, a esto:
 
-![pygmentbot_result](capturas\pygmentbot_result.jpg)
+![pygmentbot_result](capturas/pygmentbot_result.jpg)
 
 ¿Un poquito mejor no crees? :happy: Y eso es tan solo en 1 2 por 3 :sunglasses:
 
