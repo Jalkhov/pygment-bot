@@ -41,10 +41,11 @@ def send_welcome(message):
 def getCode(message):
     msg = message.text
     chatid = message.chat.id
+    msgid = message.message_id
 
     result = DoWork(msg)
     if result:
-        bot.send_photo(chatid, photo=open(f'{result}.png', 'rb'))
+        bot.send_photo(chatid, photo=open(f'{result}.png', 'rb'), reply_to_message_id=msgid)
         os.remove(f"{result}.png")
         #message.deleteMessage(message.chat.id, message.id)
 
