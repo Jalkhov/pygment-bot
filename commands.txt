@@ -1,6 +1,6 @@
 start - Convertir código a imagen
 tips - Algunos tips para el uso del bot
-buttons - Testear botones del bot
+info - Información acerca del bot
 
 -----
 

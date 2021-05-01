@@ -15,6 +15,11 @@ El esquema de colores por defecto del código es \
 elegir entre otros temas, por favor reportalo a mi Papá :3
 """
 
+str_info = """\
+*Versión actual:* 0.1 Beta
+*Desarrollador:* Pedro Torcatt
+"""
+
 str_selexer = """\
 Ok, elige el lenguaje de programación que deseas utilizar o escribe el\
 código exacto de algún otro lenguaje, para ver el listado completo de códigos\
