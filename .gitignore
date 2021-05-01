@@ -1,3 +1,10 @@
+#Custom
+asd.html
+test.py
+lexers.py
+commands.txt
+notes.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
