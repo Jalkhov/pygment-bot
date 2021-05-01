@@ -1,5 +1,5 @@
 # Pygment Bot :robot::paintbrush:
-Hola :smile: Soy **Pygment Bot**, yo te ayudaré a que tus códigos **Python** se vean más bonitos en los chats, sí, ya se que Telegram brinda la posibilidad de hacer algo como lo siguiente:
+Hola :smile: Soy **Pygment Bot**, yo te ayudaré a que tus códigos se vean más bonitos en los chats, sí, ya se que Telegram brinda la posibilidad de hacer algo como lo siguiente en código Python por ejemplo:
 
 ```
 ​```
@@ -29,6 +29,7 @@ Pero la verdad esto me sigue pareciendo feo y sin gracia :sweat_smile: Yo puedo 
 | ------- | ------------------------------------------------------------ |
 | /start  | Que comience la diversión :) Te pediré que me envíes el código Python a embellecer. |
 | /tips   | Muestra algunos tips a tener en cuenta al momento de usarme. |
+| /info   | Información acerca del bot.                                  |
 
 Recuerda que si quieres usarme en grupos debes añadirme y darme el rol de **administrador** :kissing_smiling_eyes:
 
@@ -45,15 +46,13 @@ Recuerda que si quieres usarme en grupos debes añadirme y darme el rol de **adm
 ### :cry: Desventajas
 
 * Mientras más largo el código menos se visualiza en la imagen.
-* No doy soy soporte a otros lenguajes.
-* No distingo el código Python, es decir que si me envías cualquier texto que no sea código Python, igual generaré la imagen.
+* No detecto si me estás enviando código válido o no, convierto a imagen cualquier texto que reciba.
 
 
 
 ## Todo
 
 * Poder elegir entre diversos colores de sintaxis.
-* ¿Soporte para otros leguajes de programación? :open_mouth:
 
 
 
@@ -65,3 +64,14 @@ Recuerda que si quieres usarme en grupos debes añadirme y darme el rol de **adm
 
 ### :man: [Telegram de mi Padre](https://t.me/jalkhov)
 
+
+
+# Información importante
+
+* Estoy basado en la librería Pygments para poder colorear las sintaxis, así que toda la magia es gracias a ella :smile: Para saber más acerca de esta librería visita su [página oficial](https://pygments.org).
+
+
+
+# Contribuir
+
+Las contribuciones son 100% bienvenidas :smile:
