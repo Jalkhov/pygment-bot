@@ -16,7 +16,7 @@ elegir entre otros temas, por favor reportalo a mi Papá :3
 """
 
 str_info = """\
-*Versión actual:* 0.1 Beta
+*Versión actual:* 0.2
 *Desarrollador:* Pedro Torcatt
 """
 
