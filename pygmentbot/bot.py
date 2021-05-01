@@ -49,6 +49,11 @@ def send_welcome(message):
                          parse_mode='Markdown',
                          disable_web_page_preview=True)
 
+    elif '/info' in command:
+        bot.send_message(Coll.chatid,
+                         str_info,
+                         parse_mode='Markdown')
+
 
 def ProcessLexer(message):
     lang = message.text
