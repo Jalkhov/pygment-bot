@@ -18,7 +18,7 @@ class Collect:
 Coll = Collect()
 
 
-@bot.message_handler(commands=['start', 'tips'])
+@bot.message_handler(commands=['start', 'tips', 'info'])
 def send_welcome(message):
     command = message.text
     Coll.chatid = message.chat.id
@@ -64,7 +64,6 @@ def ProcessLexer(message):
         bot.register_next_step_handler(msg, getCode)
     else:
         CheckLexer = checkLexer(lang)
-        print(checkLexer)
         if CheckLexer:
             msg = bot.reply_to(message, 'Ok, ahora envíame el código')
             Coll.lexer = lang
