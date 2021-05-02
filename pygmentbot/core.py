@@ -1,4 +1,3 @@
-import ast
 import os
 import random
 import string
@@ -7,17 +6,6 @@ import pygments
 from draculatheme import dracula
 from pygments import highlight, lexers
 from pygments.formatters import BmpImageFormatter
-
-
-"""
-def IsPythonCode(message):
-    '''Detect if recived message is a valid Python Code'''
-    try:
-        ast.parse(message)
-    except SyntaxError:
-        return False
-    return True
-"""
 
 
 def checkLexer(key):
@@ -46,12 +34,5 @@ def codetoimage(code, lexer):
     return imgname
 
 
-"""
-def autopep8(code):
-    return code
-"""
-
-
 def DoWork(code, lexer):
-    #formatted = autopep8(code)
     return(codetoimage(code, lexer))
