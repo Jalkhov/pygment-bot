@@ -12,7 +12,7 @@ elegir entre otros temas, por favor repórtalo a mi Papá :3
 """
 
 str_info = """\
-*Versión actual:* 0.2
+*Versión actual:* 0.3
 *Desarrollador:* Pedro Torcatt
 *Página oficial:* https://jalkhov.github.io/pygment-bot/
 *Código fuente:* https://github.com/Jalkhov/pygment-bot
