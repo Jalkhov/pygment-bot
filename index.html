@@ -3,58 +3,28 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="website/style.css">
 		<title>Pygment Bot</title>
 	</head>
-	<style>
-	/* Style the button that is used to open and close the collapsible content */
-	.collapsible {
-	background-color: #eee;
-	color: #444;
-	cursor: pointer;
-	padding: 18px;
-	width: 100%;
-	border: none;
-	text-align: left;
-	outline: none;
-	font-size: 15px;
-	}
-	/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-	.active, .collapsible:hover {
-	background-color: #ccc;
-	}
-	/* Style the collapsible content. Note: hidden by default */
-	.content {
-	display: none;
-	overflow: hidden;
-	}
-	table {
-	font-family: Arial, Helvetica, sans-serif;
-	border-collapse: collapse;
-	width: 100%;
-	}
-	table td, table th {
-	border: 1px solid #ddd;
-	padding: 8px;
-	}
-	table tr:nth-child(even){background-color: #f2f2f2;}
-	table tr:hover {background-color: #ddd;}
-	table th {
-	padding-top: 12px;
-	padding-bottom: 12px;
-	text-align: left;
-	background-color: #4CAF50;
-	color: white;
-	}
-	table ul{
-		padding: 0;
-	list-style-type: none;
-	}
-	</style>
+	<img class="circular--square" src="imagenes/PygmentBot.png" />
+	<p align="center" id="title">Pygment Bot</p>
 	<body>
 		<h1>Indice</h1>
 		<ul>
+			<li><a href="#bipbup">¡Bienvenido!</a></li>
 			<li><a href="#lenguajes_soportados">Lenguajes soportados</a></li>
 			<li><a href="#changelogs">Historial de versiones</a></li>
+		</ul>
+		<h1 id="bipbup">¡Bienvenido!</h1>
+		<p>¿No te parece algo feo la forma en la que puedes formatear los códigos en Telegram? A mí sí, pues yo te ofrezco una solución que te puede gustar. Mi funcionamiento es tan sencillo como:</p>
+		<p>Iniciar con el comando <b>/start</b>, te solicitaré el lenguaje de programación en el que está basado tu código, luego te solicitaré el respectivo código y ¡Boila! Te reenviaré una imagen con tu mismo código pero más bonito :3</p>
+		<p>¿Quieres saber más información al respecto? Visita mi <a href="https://github.com/Jalkhov/pygment-bot/">repositorio oficial de Github</a> donde también podrás colaborar con mejoras de código, página web o haciendo sugerencias :D ¡Venga! Te animo a hacerlo.</p>
+		<p>Si quieres contactar a mi desarrollador, o como yo le digo "Padre" :'D abajo te dejo alguno de los lugares donde lo puedes encontrar.</p>
+		<ul>
+			<li><a href="https://www.instagram.com/jalkhov/">Instagram</a></li>
+			<li><a href="https://www.facebook.com/jalkhov/">Facebook</a></li>
+			<li><a href="https://github.com/Jalkhov/">Github</a></li>
+			<li><a href="https://linktr.ee/jalkhov">Linktr.ee</a></li>
 		</ul>
 		<h1 id="lenguajes_soportados">Lenguajes soportados</h1>
 		<button type="button" class="collapsible">Mostrar tabla</button>
@@ -2044,20 +2014,6 @@
 				</tbody>
 			</table>
 		</div>
-		<script>
-		var coll = document.getElementsByClassName("collapsible");
-		var i;
-		for (i = 0; i < coll.length; i++) {
-		coll[i].addEventListener("click", function() {
-		this.classList.toggle("active");
-		var content = this.nextElementSibling;
-		if (content.style.display === "block") {
-		content.style.display = "none";
-		} else {
-		content.style.display = "block";
-		}
-		});
-		}
-		</script>
+		<script src="website/js.js"></script>
 	</body>
 </html>

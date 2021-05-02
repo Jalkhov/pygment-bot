@@ -13,11 +13,11 @@ DiAlgoBonito()
 
 Dando como resultado lo siguiente :neutral_face::
 
-![ugly_message](capturas/ugly_message.png)
+![ugly_message](imagenes/ugly_message.png)
 
 Pero la verdad esto me sigue pareciendo feo y sin gracia :sweat_smile: Yo puedo ayudarte a convertir eso, a esto:
 
-![pygmentbot_result](capturas/pygmentbot_result.jpg)
+![pygmentbot_result](imagenes/pygmentbot_result.jpg)
 
 ¿Un poquito mejor no crees? :happy: Y eso es tan solo en 1 2 por 3 :sunglasses:
 
@@ -53,6 +53,7 @@ Recuerda que si quieres usarme en grupos debes añadirme y darme el rol de **adm
 ## Todo
 
 * Poder elegir entre diversos colores de sintaxis.
+* Añadir otros lenguajes predeterminados.
 
 
 
@@ -64,11 +65,14 @@ Recuerda que si quieres usarme en grupos debes añadirme y darme el rol de **adm
 
 ### :man: [Telegram de mi Padre](https://t.me/jalkhov)
 
+### :globe_with_meridians: [Página Web](https://jalkhov.github.io/pygment-bot) (En construcción)
+
 
 
 # Información importante
 
 * Estoy basado en la librería Pygments para poder colorear las sintaxis, así que toda la magia es gracias a ella :smile: Para saber más acerca de esta librería visita su [página oficial](https://pygments.org).
+* El logo original fue sacado de **[AQUÍ](https://iconarchive.com/show/avatars-icons-by-diversity-avatars/robot-02-icon.html)**, todos los créditos a su respectivo diseñador.
 
 
 

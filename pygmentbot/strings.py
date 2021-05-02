@@ -1,7 +1,3 @@
-str_start = """\
-Ok, envíame código Python :)
-"""
-
 str_tips = """\
 _No envies mensajes demasiado largos_
 Recuerda que yo te devuelvo el código en formato de imagen, por lo \
@@ -18,12 +14,14 @@ elegir entre otros temas, por favor reportalo a mi Papá :3
 str_info = """\
 *Versión actual:* 0.2
 *Desarrollador:* Pedro Torcatt
+*Página oficial:* https://jalkhov.github.io/pygment-bot/
+*Código fuente:* https://github.com/Jalkhov/pygment-bot
 """
 
 str_selexer = """\
 Ok, elige el lenguaje de programación que deseas utilizar o escribe el\
 código exacto de algún otro lenguaje, para ver el listado completo de códigos\
-accede al siguiente [enlace](https://pygments.org/docs/lexers/)
+accede al siguiente [enlace](https://jalkhov.github.io/pygment-bot/#lenguajes_soportados)
 """
 
 availangs = {'Python': 'python',
