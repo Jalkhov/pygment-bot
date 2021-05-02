@@ -70,7 +70,7 @@ def ProcessLexer(message):
             bot.register_next_step_handler(msg, getCode)
         else:
             bot.send_message(
-                Coll.chatid, 'El lexer ingresado es erroneo, por favor verifíquelo.')
+                Coll.chatid, 'El código ingresado es erróneo, por favor verifíquelo.')
 
 
 def getCode(message):
