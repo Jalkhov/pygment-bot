@@ -1,81 +1,207 @@
-/* Style the button that is used to open and close the collapsible content */
-
-.collapsible {
-	background-color: #eee;
-	color: #444;
-	cursor: pointer;
-	padding: 18px;
-	width: 100%;
-	border: none;
-	text-align: left;
-	outline: none;
-	font-size: 15px;
+* {
+    font-family: 'Quicksand', sans-serif;
 }
 
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-
-.active,
-.collapsible:hover {
-	background-color: #ccc;
+#pygmentbot {
+    color: white;
+    font-weight: bolder;
 }
 
-
-/* Style the collapsible content. Note: hidden by default */
-
-.content {
-	display: none;
-	overflow: hidden;
-}
-
-table {
-	font-family: Arial, Helvetica, sans-serif;
-	border-collapse: collapse;
-	width: 100%;
-}
-
-table td,
-table th {
-	border: 1px solid #ddd;
-	padding: 8px;
-}
-
-table tr:nth-child(even) {
-	background-color: #f2f2f2;
-}
-
-table tr:hover {
-	background-color: #ddd;
-}
-
-table th {
-	padding-top: 12px;
-	padding-bottom: 12px;
-	text-align: left;
-	background-color: #4CAF50;
-	color: white;
+#pygmentbot:hover {
+    background: #FFFF17;
+    background: -webkit-linear-gradient(to right, #FFFF17 0%, #EDB90C 50%);
+    background: -moz-linear-gradient(to right, #FFFF17 0%, #EDB90C 50%);
+    background: linear-gradient(to right, #FFFF17 0%, #EDB90C 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 table ul {
-	padding: 0;
-	list-style-type: none;
+    padding: 0;
+    list-style-type: none;
+}
+
+.resaltar,
+#bipbup {
+    background: #121FCF;
+    background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 50%);
+    background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 50%);
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+
+.linke {
+    background: #EBDD15;
+    background: -webkit-linear-gradient(to right, #EBDD15 0%, #A12FED 100%);
+    background: -moz-linear-gradient(to right, #EBDD15 0%, #A12FED 100%);
+    background: linear-gradient(to right, #EBDD15 0%, #A12FED 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+}
+
+.linke:hover {
+    background: #FF0000;
+    background: -webkit-linear-gradient(to right, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
+    background: -moz-linear-gradient(to right, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
+    background: linear-gradient(to right, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .circular--square {
-	border-radius: 50%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .circular--square {
-	border-top-left-radius: 50% 50%;
-	border-top-right-radius: 50% 50%;
-	border-bottom-right-radius: 50% 50%;
-	border-bottom-left-radius: 50% 50%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
 }
 
 #title {
-	font-size: 2.4em;
-	margin-top: 0;
+    font-size: 2.4em;
+    margin-top: 0;
+}
+
+body>.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 0px 30px -7px rgba(120, 120, 120, 1);
+    -moz-box-shadow: 0px 0px 30px -7px rgba(120, 120, 120, 1);
+    box-shadow: 0px 0px 30px -7px rgba(120, 120, 120, 1);
+    border-radius: 20px;
+    padding-top: 15px;
+}
+
+
+/*IMAGE HEADER*/
+/**
+ * Profile image component
+ */
+.profile-header-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-header-img>img.img-circle {
+    border: 5px solid white;
+}
+
+
+/****tabs*****/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.jumbotron {
+    background: #7E0F6D;
+    color: white;
+}
+
+.jumbotron>h1 {
+    font-weight: bolder;
+}
+
+
+/*Fun begins*/
+.tab_container {
+    width: 100%;
+    position: relative;
+    margin-top: -10px;
+}
+
+input,
+section {
+    clear: both;
+    padding-top: 10px;
+    display: none;
+}
+
+label {
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+    float: left;
+    padding: 1.5em;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    background: #7E0F6D;
+    letter-spacing: 2px;
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3 {
+    display: block;
+    padding: 20px;
+    background: #fff;
+    color: #999;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.tab-content {
+    font-size: 20px;
+}
+
+.tab_container .tab-content p,
+.tab_container .tab-content table,
+.tab_container .tab-content h3 {
+    -webkit-animation: fadeInScale 0.7s ease-in-out;
+    -moz-animation: fadeInScale 0.7s ease-in-out;
+    animation: fadeInScale 0.7s ease-in-out;
+}
+
+.tab_container .tab-content h3 {
+    text-align: center;
+}
+
+.tab_container [id^="tab"]:checked+label {
+    background: #fff;
+    color: #7E0F6D;
+    box-shadow: inset 0 3px #7E0F6D;
+}
+
+
+/*Media query*/
+@media only screen and (max-width: 930px) {
+    label span {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    label span {
+        display: none;
+    }
+    .tab_container {
+        width: 98%;
+    }
+}
+
+
+/*Content Animation*/
+@keyframes fadeInScale {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
