@@ -7,6 +7,7 @@ from telebot import types
 
 TOKEN = os.environ['TELEGRAM_TOKEN']
 bot = telebot.TeleBot(TOKEN)
+hideBoard = types.ReplyKeyboardRemove()
 
 
 class Collect:
@@ -60,17 +61,19 @@ def ProcessLexer(message):
     # Si el lenguaje seleccionado está entre los predeterminados
     if lang in availangs:
         Coll.lexer = lang
-        msg = bot.reply_to(message, f'Ok, ahora envíame el código {lang}')
+        msg = bot.reply_to(message, f'Ok, ahora envíame el código {lang}', reply_markup=hideBoard)
         bot.register_next_step_handler(msg, getCode)
     else:
         CheckLexer = checkLexer(lang)
         if CheckLexer:
-            msg = bot.reply_to(message, 'Ok, ahora envíame el código')
+            langname = CheckLexer
+            msg = bot.reply_to(
+                message, f'Ok, ahora envíame el código {langname}', reply_markup=hideBoard)
             Coll.lexer = lang
             bot.register_next_step_handler(msg, getCode)
         else:
             bot.send_message(
-                Coll.chatid, 'El código ingresado es erróneo, por favor verifíquelo.')
+                Coll.chatid, 'El código ingresado es erróneo, por favor verifíquelo.', reply_markup=hideBoard)
 
 
 def getCode(message):

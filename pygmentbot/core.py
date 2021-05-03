@@ -10,8 +10,8 @@ from pygments.formatters import BmpImageFormatter
 
 def checkLexer(key):
     try:
-        lexers.get_lexer_by_name(key)
-        return True
+        lex = lexers.get_lexer_by_name(key)
+        return lex.name
     except pygments.util.ClassNotFound:
         return False
 
