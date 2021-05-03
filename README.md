@@ -65,7 +65,7 @@ Recuerda que si quieres usarme en grupos debes añadirme y darme el rol de **adm
 
 ### :man: [Telegram de mi Padre](https://t.me/jalkhov)
 
-### :globe_with_meridians: [Página Web](https://jalkhov.github.io/pygment-bot) (En construcción)
+### :globe_with_meridians: [Página Web](https://jalkhov.github.io/pygment-bot)
 
 
 
