@@ -11,6 +11,8 @@ hideBoard = types.ReplyKeyboardRemove()
 
 
 class Collect:
+    '''Clase para recolectar algunos datos durante la ejecución de la tarea'''
+
     def __init__(self):
         self.lexer = None
         self.chatid = None
@@ -21,6 +23,7 @@ Coll = Collect()
 
 @bot.message_handler(commands=['start', 'tips', 'info'])
 def send_welcome(message):
+    '''Función que procesa los comandos recibidos'''
     command = message.text
     Coll.chatid = message.chat.id
 
@@ -57,6 +60,7 @@ def send_welcome(message):
 
 
 def ProcessLexer(message):
+    '''Procesar el código (lexer) recibido'''
     lang = message.text
     # Si el lenguaje seleccionado está entre los predeterminados
     if lang in availangs:
@@ -77,6 +81,7 @@ def ProcessLexer(message):
 
 
 def getCode(message):
+    '''Función que recibe el código (Python, HTML...)'''
     code = message.text
     msgid = message.message_id
     lexer = Coll.lexer

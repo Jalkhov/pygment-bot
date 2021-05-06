@@ -1,4 +1,3 @@
-import os
 import random
 import string
 
@@ -9,6 +8,7 @@ from pygments.formatters import BmpImageFormatter
 
 
 def checkLexer(key):
+    '''Verifica si el código (lexer) recibido existe en Pygments'''
     try:
         lex = lexers.get_lexer_by_name(key)
         return lex.name
@@ -17,7 +17,7 @@ def checkLexer(key):
 
 
 def Randname():
-    '''Get random name with numbers and chars'''
+    '''Genera un nombre al azar destinado a las imágenes generadas'''
     chars = string.ascii_uppercase + string.digits
     return ''.join(random.choice(chars) for _ in range(6))
 
@@ -26,7 +26,6 @@ def codetoimage(code, lexer):
     '''Genera la imagen y la guarda localmente'''
     imgname = Randname()
     style1 = dracula.DraculaStyle
-    style2 = 'monokai'
     formatter = BmpImageFormatter(
         style=style1, image_format='PNG', line_numbers=False, font_size=16)
     lex = lexers.get_lexer_by_name(lexer)
@@ -35,4 +34,5 @@ def codetoimage(code, lexer):
 
 
 def DoWork(code, lexer):
+    '''Empieza todo el trabajo'''
     return(codetoimage(code, lexer))
