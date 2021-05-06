@@ -19,7 +19,7 @@ Pero la verdad esto me sigue pareciendo feo y sin gracia :sweat_smile: Yo puedo 
 
 ![pygmentbot_result](imagenes/pygmentbot_result.jpg)
 
-¿Un poquito mejor no crees? :happy: Y eso es tan solo en 1 2 por 3 :sunglasses:
+¿Un poquito mejor no crees? Y eso es tan solo en 1 2 por 3 :sunglasses:
 
 
 
